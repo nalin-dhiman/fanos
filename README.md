@@ -12,7 +12,7 @@ The accompanying paper is included in the release repo; this library is just the
 ## Install
 
 ```bash
-pip install fanos-optimizer
+pip install fanos
 ```
 
 ## Quickstart
@@ -46,8 +46,5 @@ So: treat it as a tool for experiments, not a default choice for production.
 
 Add the paper citation from `CITATION.cff` in the repo.
 
-## License
-
-MIT (see `LICENSE`).
 
 [![PyPI version](https://badge.fury.io/py/fanos.svg)](https://pypi.org/project/fanos/)

@@ -1,0 +1,35 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+license = {text = "MIT"}
+name = "fanos"
+version = "0.3.1"
+description = "FANoS: Friction-Adaptive Nosé–Hoover Symplectic momentum optimizer for PyTorch."
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{name="Nalin Dhiman"}]
+keywords = ["optimizer", "pytorch", "symplectic", "nose-hoover", "thermostat", "momentum"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+  "torch>=2.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/nalin-dhiman/fanos"
+Repository = "https://github.com/nalin-dhiman/fanos"
+Documentation = "https://github.com/nalin-dhiman/fanos#readme"
+"Bug Tracker" = "https://github.com/nalin-dhiman/fanos/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/fanos"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
