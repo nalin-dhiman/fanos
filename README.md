@@ -49,3 +49,5 @@ Add the paper citation from `CITATION.cff` in the repo.
 ## License
 
 MIT (see `LICENSE`).
+
+[![PyPI version](https://badge.fury.io/py/fanos.svg)](https://pypi.org/project/fanos/)
