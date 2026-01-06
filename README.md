@@ -44,7 +44,29 @@ So: treat it as a tool for experiments, not a default choice for production.
 
 ## Citation
 
-Add the paper citation from `CITATION.cff` in the repo.
+If you use this work, please cite:
+
+Dhiman, N. (2025). *FANoS: Friction-Adaptive Nosé–Hoover Symplectic Momentum for Stiff Objectives*.  
+arXiv:2601.00889.  
+https://doi.org/10.48550/arXiv.2601.00889
+
+
+
+@misc{dhiman2025fanosfrictionadaptivenosehooversymplectic,
+  title={FANoS: Friction-Adaptive Nos\'e--Hoover Symplectic Momentum for Stiff Objectives},
+  author={Dhiman, Nalin},
+  year={2025},
+  eprint={2601.00889},
+  archivePrefix={arXiv},
+  primaryClass={cs.LG},
+  doi={10.48550/arXiv.2601.00889},
+  url={https://arxiv.org/abs/2601.00889}
+}
+
+
+
+[![DOI](https://img.shields.io/badge/DOI-10.48550%2FarXiv.2601.00889-blue)](https://doi.org/10.48550/arXiv.2601.00889)
+
 
 
 [![PyPI version](https://badge.fury.io/py/fanos.svg)](https://pypi.org/project/fanos/)
