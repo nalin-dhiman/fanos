@@ -52,6 +52,7 @@ https://doi.org/10.48550/arXiv.2601.00889
 
 
 
+```bibtex
 @misc{dhiman2025fanosfrictionadaptivenosehooversymplectic,
   title={FANoS: Friction-Adaptive Nos\'e--Hoover Symplectic Momentum for Stiff Objectives},
   author={Dhiman, Nalin},
