@@ -1,0 +1,21 @@
+\begin{tabular}{llrr}
+\toprule
+Task & Optimizer & metric & seconds \\
+\midrule
+rosenbrock100 & fanosv2 & 5.611e+00 & 2.05 \\
+rosenbrock100 & adamw & 9.524e+00 & 0.52 \\
+rosenbrock100 & rmsprop & 7.583e-01 & 0.51 \\
+noisy\_small\_regression & fanosv2 & 5.714e-02 & 5.62 \\
+noisy\_small\_regression & adamw & 5.318e-02 & 1.20 \\
+noisy\_small\_regression & rmsprop & 6.056e-02 & 1.17 \\
+ode\_exp\_fit & fanosv2 & 7.120e-03 & 1.85 \\
+ode\_exp\_fit & adamw & 7.120e-03 & 0.40 \\
+ode\_exp\_fit & rmsprop & 9.848e-03 & 0.39 \\
+poisson\_pinn\_1d & fanosv2 & 1.445e-03 & 9.99 \\
+poisson\_pinn\_1d & adamw & 1.863e-08 & 3.19 \\
+poisson\_pinn\_1d & rmsprop & 2.278e-04 & 3.17 \\
+sequence\_memory & fanosv2 & 1.000e+00 & 20.66 \\
+sequence\_memory & adamw & 1.000e+00 & 11.99 \\
+sequence\_memory & rmsprop & 7.266e-01 & 12.07 \\
+\bottomrule
+\end{tabular}
