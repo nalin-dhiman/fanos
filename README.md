@@ -5,6 +5,12 @@ FANoS-v2 is a PyTorch optimizer for experiments with feedback-controlled momentu
 ## Install
 
 ```bash
+pip install fanos
+```
+
+For editable development:
+
+```bash
 python3 -m pip install virtualenv
 python3 -m virtualenv fanos_env
 source fanos_env/bin/activate
@@ -18,10 +24,11 @@ The checked local environment uses Python 3.13.5 and PyTorch 2.8.0. TensorFlow i
 
 ```python
 import torch
-from fanos_v2 import FANoSV2
+from fanos import FANoS
+from fanos_v2 import FANoSV2, FANoSV2Fast
 
 model = torch.nn.Linear(10, 1)
-opt = FANoSV2(model.parameters(), lr=1e-3, grad_clip=1.0)
+opt = FANoS(model.parameters(), lr=1e-3, grad_clip=1.0)
 
 x = torch.randn(64, 10)
 y = torch.randn(64, 1)

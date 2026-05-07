@@ -3,8 +3,8 @@ requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "fanos-v2"
-version = "0.2.0a0"
+name = "fanos"
+version = "0.4.0"
 description = "FANoS-v2: feedback-controlled momentum optimizer for PyTorch"
 readme = "README.md"
 requires-python = ">=3.9"
@@ -27,6 +27,12 @@ dev = ["pytest>=8", "scipy>=1.10", "matplotlib>=3.7"]
 bench = ["scipy>=1.10", "matplotlib>=3.7"]
 eeg = ["mne>=1.8"]
 tensorflow = ["tensorflow>=2.15"]
+
+[project.urls]
+Homepage = "https://github.com/nalin-dhiman/fanos"
+Repository = "https://github.com/nalin-dhiman/fanos"
+Documentation = "https://github.com/nalin-dhiman/fanos/tree/main/docs"
+"Evidence Pipeline" = "https://github.com/nalin-dhiman/FANoS_PIPELINE"
 
 [tool.setuptools.packages.find]
 where = ["src"]
