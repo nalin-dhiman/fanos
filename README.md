@@ -1,6 +1,6 @@
 # FANoS-v2
 
-FANoS-v2 is a PyTorch optimizer for experiments with feedback-controlled momentum on stiff objectives. It is not a default replacement for AdamW. The goal of this implementation is consistency, stability instrumentation, and a clear path toward lower-memory variants.
+FANoS-v2 is a PyTorch optimizer for experiments with feedback-controlled momentum on stiff objectives. The goal of this implementation is consistency, stability instrumentation, and a clear path toward lower-memory variants.
 
 ## Install
 
