@@ -151,7 +151,7 @@ For a faster check:
 
 ## Full Research Run
 
-This is the one-command runner for leaving the machine overnight. It can fetch datasets, run MNIST, FashionMNIST, CIFAR-10, stiff objectives, the PINN preset, optional EEG, and build reports.
+This is the one-command. It can fetch datasets, run MNIST, FashionMNIST, CIFAR-10, stiff objectives, the PINN preset, optional EEG, and build reports.
 
 ```bash
 ./fanos_virtualenv/bin/python tools/run_full_research_study.py \
@@ -174,7 +174,7 @@ For a quick command preview without running:
 ./fanos_virtualenv/bin/python tools/run_full_research_study.py --dry-run
 ```
 
-## Overnight Study
+## Long Study
 
 This is the better command for serious tuning evidence. It repeats seeds, compares baselines against several fixed FANoS presets, and writes aggregate mean/std tables:
 
@@ -242,7 +242,7 @@ See [docs/benchmarking.md](docs/benchmarking.md) for dataset and benchmark detai
 
 ## Current Smoke Results
 
-These are tiny CPU smoke runs, not claims of superiority.
+These are tiny CPU smoke runs.
 
 MNIST subset, one epoch, 512 train samples, 256 test samples:
 
@@ -269,7 +269,7 @@ RMSProp baseline  top1_mean=0.9817  seconds_mean=65.0
 SGD baseline      top1_mean=0.9675  seconds_mean=63.2
 ```
 
-Critical interpretation: this is a real positive signal on MNIST, not proof of a universal optimizer. FANoS-v2 is strongest today on Rosenbrock/stiff nonconvex tests, competitive on MNIST after tuning, repaired on the sequence-memory smoke with warmup, and promising for PINNs only with the softer `pinn` preset. EEGBCI and ill-conditioned quadratics remain weak or inconclusive.
+
 
 ## Reproducibility Checklist
 
@@ -280,6 +280,5 @@ Critical interpretation: this is a real positive signal on MNIST, not proof of a
 - Report wall-clock time, peak memory, and energy-to-target when hardware counters are available.
 - For EEG tasks such as HMC or ADFTD, report dataset split protocol, preprocessing, model architecture, and seed-level confidence intervals.
 
-## Contributing
+## Citation 
 
-See [CONTRIBUTING.md](CONTRIBUTING.md).
